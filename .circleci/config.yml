@@ -1,21 +1,30 @@
 version: 2
-jobs:
-  docker:
-     - image: circleci/node:6.10
-  steps:
-     - checkout
-     - run:
-         name: Install HexoCLI
-         command: npm install -g hexo-cli
-     - run:
-         name: Setup Git
-         command: git config --global user.name "Unixfy via CircleCI" && git config --global user.email "admin@x2c0.net"
-     - run:
-         name: Clean up Hexo
-         command: hexo clean
-     - run:
-         name: Copy AppSpec.yml
-         command: cp appspec.yml public/appspec.yml
-     - run:
-         name: Deploy to AWS CodeStar!
-         command: hexo deploy -g
+jobs: 
+  build: 
+    docker: 
+      - 
+        image: "circleci/node:6.10"
+    steps: 
+      - checkout
+      - 
+        run: 
+          command: "sudo npm install -g hexo-cli"
+          name: "Install HexoCLI"
+      - 
+        run: 
+          command: "git config --global user.name 'Unixfy via CircleCI' && git config --global user.email 'admin@x2c0.net'"
+          name: "Setup Git"
+      - 
+        run: 
+          command: "hexo clean"
+          name: "Clean up Hexo"
+      - 
+        run: 
+          command: "cp appspec.yml public/appspec.yml"
+          name: "Copy AppSpec.yml"
+      - 
+        run: 
+          command: "hexo deploy -g"
+          name: "Deploy to AWS CodeStar!"
+
+
