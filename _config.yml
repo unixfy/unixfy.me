@@ -77,9 +77,12 @@ theme: materializecss
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: ssh://APKAITGARBTIY5TF2MIA@git-codecommit.us-east-1.amazonaws.com/v1/repos/unixfy-me
-#  branch: master  
+  type: sftp
+  host: unixfy.me
+  user: ubuntu-ftp
+  pass: $sftppass
+  remotePath: /var/www/unixfy
+  port: 22
 
 # hexo-admin authentification
 admin:

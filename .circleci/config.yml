@@ -15,25 +15,17 @@ jobs:
           name: "Reinstall Nodemodules"
       - 
         run: 
-          command: "git config --global user.name 'Unixfy via CircleCI' && git config --global user.email 'admin@x2c0.net'"
-          name: "Setup Git"
-      - 
-        run: 
           command: "hexo clean"
           name: "Clean up Hexo"
       - run:
           command: "hexo generate"
           name: "Generate files Hexo"
       - run:
-          command: "ssh-keyscan -H git-codecommit.us-east-1.amazonaws.com >> ~/.ssh/known_hosts"
-          name: "Add AWS SSH key"
-      - 
-        run: 
-          command: "cp appspec.yml public/appspec.yml"
-          name: "Copy AppSpec.yml"
+          command: "ssh-keyscan -H unixfy.me >> ~/.ssh/known_hosts"
+          name: "Add server SSH key"
       - 
         run: 
           command: "hexo deploy"
-          name: "Deploy to AWS CodeStar!"
+          name: "Deploy to server!"
 
 
