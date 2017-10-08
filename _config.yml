@@ -78,7 +78,7 @@ theme: materializecss
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/unixfy-me
+  repo: ssh://APKAITGARBTIY5TF2MIA@git-codecommit.us-east-1.amazonaws.com/v1/repos/unixfy-me
 #  branch: master  
 
 # hexo-admin authentification

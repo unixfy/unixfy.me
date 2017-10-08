@@ -24,6 +24,9 @@ jobs:
       - run:
           command: "hexo generate"
           name: "Generate files Hexo"
+      - run:
+          command: "ssh-keyscan -H git-codecommit.us-east-1.amazonaws.com >> ~/.ssh/known_hosts"
+          name: "Add AWS SSH key"
       - 
         run: 
           command: "cp appspec.yml public/appspec.yml"
