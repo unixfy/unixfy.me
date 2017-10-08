@@ -25,7 +25,7 @@ jobs:
           name: "Add server SSH key"
       - 
         run: 
-          command: "hexo deploy"
+          command: "scp -r public/ ubuntu@unixfy.me:/var/www/unixfy"
           name: "Deploy to server!"
 
 

@@ -77,12 +77,7 @@ theme: materializecss
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: sftp
-  host: unixfy.me
-  user: ubuntu-ftp
-  pass: $sftppass
-  remotePath: /var/www/unixfy
-  port: 22
+  type:
 
 # hexo-admin authentification
 admin:
