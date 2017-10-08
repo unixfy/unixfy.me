@@ -3,14 +3,9 @@
 		<div class="row">
 			<div class="col s12 m12 l12">
 				<div class="card blue about-card">
-        <div class="card-image">
-          <img class="img-circle activator" src="/img/gnu.png" style="height:15vmax;width:15vmax;display:block;margin:auto;">
-          </div>
-					<h4 class="white-text center-align">Hi! I'm Unixfy.</h4>
-              <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
+					<div class="card-image"><img class="img-circle activator" src="/img/gnu.png" style="height:15vmax;width:15vmax;display:block;margin:auto;"></div>
+					<h4 class="white-text center-align">Hi! I'm <%- theme.author.alias %>.</h4>
+					<%- page.content %>
 				</div>
 			</div>
 		</div>
