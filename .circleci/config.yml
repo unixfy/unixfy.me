@@ -21,13 +21,16 @@ jobs:
         run: 
           command: "hexo clean"
           name: "Clean up Hexo"
+      - run:
+          command: "hexo generate"
+          name: "Generate files Hexo"
       - 
         run: 
           command: "cp appspec.yml public/appspec.yml"
           name: "Copy AppSpec.yml"
       - 
         run: 
-          command: "hexo deploy -g"
+          command: "hexo deploy"
           name: "Deploy to AWS CodeStar!"
 
 
