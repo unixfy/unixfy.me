@@ -10,6 +10,9 @@ jobs:
         run: 
           command: "sudo npm install -g hexo-cli"
           name: "Install HexoCLI"
+      - run:
+          command: "sudo rm -rf node_modules/ && sudo npm install"
+          name: "Reinstall Nodemodules"
       - 
         run: 
           command: "git config --global user.name 'Unixfy via CircleCI' && git config --global user.email 'admin@x2c0.net'"
