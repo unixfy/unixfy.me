@@ -1,0 +1,15 @@
+.home {
+	padding-top: 20px;
+}
+.home-wrapper {
+	background: url("/img/home.jpg") center center !important;
+    height: 100%;
+}
+.about-card {
+    height: 80vh;
+    padding-top:30px;
+}
+.img-circle {
+    border-radius: 50% !important;
+    border: 5px solid white;
+}
