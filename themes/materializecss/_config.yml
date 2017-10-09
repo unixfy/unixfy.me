@@ -17,3 +17,11 @@ author:
   lastname: Wang
   alias: Unixfy
   fullname: Alex Wang
+  github: https://github.com/unixfy
+
+contact:
+  email: https://spamty.eu/mail/v4/557/G39TCD287Gb799ba7c/
+
+donate:
+  paypal: https://paypal.me/unixfy
+  cryptos: https://www.cryptonator.com/api/merchant/v1/startpayment?merchant_id=499a9efd3dc7caa64c8a9416bbe48fff&item_name=Donation&invoice_amount=1&invoice_currency=usd&language=en&item_description=Thanks+for+donating+%3A%29&order_id=DON-1
