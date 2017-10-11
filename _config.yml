@@ -96,29 +96,30 @@ autolinker:
     twitter: true
     hashtag: twitter
 
-# Hexo Beautify
-beautify:
-  types:
-    - html
-    - css
-    - js
+# Hexo Minifier
+html_minifier:
+  enable: true
+  ignore_error: false
   exclude:
+
+css_minifier:
+  enable: true
+  exclude: 
     - '*.min.css'
+
+js_minifier:
+  enable: true
+  mangle: false
+  exclude: 
     - '*.min.js'
-  html:
-    'indent_inner_html': false
-    'indent_size': 2
-    'indent_with_tabs': true
-    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
-  css:
-    'indent_size': 2
-    'newline_between_rules': true
-    'indent_with_tabs': true
-    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
-  js:
-    'indent_size': 2
-    'indent_with_tabs': true
-    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 5
+  pngquant: false
+  progressive: false
 
 lazyload:
   enable: true 
