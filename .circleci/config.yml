@@ -21,11 +21,7 @@ jobs:
           command: "hexo generate"
           name: "Generate files Hexo"
       - run:
-          command: "ssh-keyscan -H unixfy.me >> ~/.ssh/known_hosts"
-          name: "Add server SSH key"
-      - 
-        run: 
-          command: "scp -r public/ ubuntu@unixfy.me:/var/www/unixfy"
-          name: "Deploy to server!"
+          command: "hexo deploy"
+          name: "Deploy to S3!"
 
 
