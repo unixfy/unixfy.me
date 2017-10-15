@@ -1,36 +1,23 @@
 <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper teal darken-1">
-                <div class="container">
-                    <a href="/" class="brand-logo">
-                        <%= config.title %>
-                    </a>
-                    <a href="#" data-activates="mobilenav" class="button-collapse">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <a href="/" class="waves-effect waves-light">Home</a>
-                        </li>
-                        <li>
-                            <a href="blog/" class="waves-effect waves-light">Blog</a>
-                        </li>
-                        <li>
-                            <a href="portfolio/" class="waves-effect waves-light">Portfolio</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>`
-    </div>
-    <ul class="side-nav" id="mobilenav">
-        <li>
-            <a href="/" class="waves-effect waves-green">Home</a>
-        </li>
-        <li>
-            <a href="blog/" class="waves-effect waves-green">Blog</a>
-        </li>
-        <li>
-            <a href="portfolio/" class="waves-effect waves-green">Portfolio</a>
-        </li>
-    </ul>
+	<nav>
+		<div class="nav-wrapper teal darken-1">
+			<div class="container">
+				<a class="brand-logo" href="/"><%= config.title %></a> <a class="button-collapse" data-activates="mobilenav" href="#"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+                    <% for (var i in theme.menu){ %>
+                    <li>
+                        <a class="waves-effect waves-light" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                    </li>    
+                    <% } %>
+				</ul>
+			</div>
+		</div>
+	</nav>`
+</div>
+<ul class="side-nav" id="mobilenav">
+    <% for (var i in theme.menu){ %>
+    <li>
+        <a class="waves-effect waves-green" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+    </li>    
+    <% } %>
+</ul>
