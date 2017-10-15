@@ -19,6 +19,14 @@ author:
   fullname: Alex Wang
   github: https://github.com/unixfy
 
+about:
+  title1: Who am I?
+  title2: Where's my Work?
+  title3: Where's my Contact Info?
+  desc1: I am a developer who creates apps and interfaces for clients (and myself). I like to use frameworks like Bootstrap or Materialize.css (my two favorite) to build these.
+  desc2: You can find all of my personal projects and contributions to other OS projects on my <a class="yellow-text" href="<%= url_for(theme.author.github) %>" target="_blank">GitHub <i aria-hidden="true" class="fa fa-external-link"></i></a>, though I do maintain a few private projects.
+  desc3: Feel free to contact me via email at <a class="tooltipped yellow-text" data-delay="50" data-position="left" data-tooltip="Click to Reveal Address" href="<%= url_for(theme.contact.email) %>" target="_blank">@unixfy.me</a>.
+
 contact:
   email: https://spamty.eu/mail/v4/557/G39TCD287Gb799ba7c/
 
