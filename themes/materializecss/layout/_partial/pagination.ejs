@@ -1,0 +1,8 @@
+  <ul class="pagination">
+    <% if (page.prev){ %>
+    <li><a href="<%- url_for(page.prev_link) %>"><i class="material-icons">chevron_left</i></a></li>
+    <% } %>
+    <% if (page.next){ %>
+    <li><a href="<%- url_for(page.next_link) %>"><i class="material-icons">chevron_right</i></a></li>
+    <% } %>
+  </ul>
