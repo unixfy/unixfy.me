@@ -123,4 +123,11 @@ image_minifier:
 
 lazyload:
   enable: true 
-  onlypost: true
+  onlypost: false
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 40
+  hub:
