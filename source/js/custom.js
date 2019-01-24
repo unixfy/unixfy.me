@@ -1,14 +1,15 @@
-// Materialize 
-$(document).ready(function () {
-    $(".button-collapse").sideNav();
-    $('.modal').modal();   
-    $('.tooltipped').tooltip({delay: 50});
-    
-    $('#masonry-grid').masonry({
-        // options
-        itemSelector: '.col',
-        columnWidth: '.col',
-        stagger: 30
-    });
+// Materialize
+$(document).ready(function() {
+	$('.sidenav').sidenav();
+	$('.modal').modal();
+	$('.tooltipped').tooltip({
+		delay: 50
+	});
+
+	$('#masonry-grid').masonry({
+		// options
+		itemSelector: '.col',
+		columnWidth: '.col',
+		stagger: 30
+	});
 })
- 
