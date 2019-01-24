@@ -1,36 +1,37 @@
 <div class="col s12 m12 l12">
-	<div class="card blue about-card z-depth-5">
-		<div class="card-image"><img class="img-circle activator" src="/img/gnu.png" style="height:13vmax;width:13vmax;display:block;margin:auto;"></div>
-		<h4 class="white-text center-align about-text">Hi! I'm <%- theme.author.alias %>.</h4>
-		<div class="center-align">
-			<a class="btn-floating btn-large waves-effect waves-light orange z-depth-3 activator"><i class="material-icons">info_outline</i></a>
-		</div>
-		<div class="card-reveal blue accent-2">
-			<%- page.content %>
-			<span class="card-title white-text"><b>Information</b><i class="material-icons right">close</i></span><hr>
-			<div class="row about-row">
-				<div class="col l4 m12 s12 center-align about-column">
-					<i class="material-icons white-text large">insert_emoticon</i>
-					<h5 class="white-text"><%- theme.about.title1 %></h5><span class="white-text">I am a developer who creates apps and interfaces for clients (and myself). I like to use frameworks like Bootstrap or Materialize.css (my two favorite) to build these.</span>
-				</div>
-				<div class="col l4 m12 s12 center-align about-column">
-					<i class="material-icons white-text large">work</i>
-					<h5 class="white-text"><%- theme.about.title2 %></h5><span class="white-text">You can find all of my personal projects and contributions to other OS projects on my <a class="yellow-text" href="<%= url_for(theme.author.github) %>" target="_blank">GitHub <i aria-hidden="true" class="fa fa-external-link"></i></a>, though I do maintain a few private projects.</span>
-				</div>
-				<div class="col l4 m12 s12 center-align about-column">
-					<i class="material-icons white-text large">contacts</i>
-					<h5 class="white-text"><%- theme.about.title3 %></h5><span class="white-text">Feel free to contact me via email at <a class="tooltipped yellow-text" data-delay="50" data-position="left" data-tooltip="Click to Reveal Address" href="<%= url_for(theme.contact.email) %>" target="_blank">@unixfy.me</a>.</span>
-				</div><span class="white-text"></span>
-			</div>
-			<div class="row">
-				<span class="white-text"></span>
-				<div class="col s12 m12 l12 center-align">
-					<span class="white-text"></span>
-					<hr>
-					<span class="white-text"><br></span>
-					<h5 class="white-text"><span class="white-text">PS: If you like my work, please <a class="yellow-text" href="%3C%=%20url_for(theme.donate.paypal)%20%%3E" target="_blank">donate via <i aria-hidden="false" class="fa fa-paypal"></i></a> or <a class="yellow-text" href="%3C%=%20url_for(theme.donate.cryptos)%20%%3E" target="_blank">via <i aria-hidden="false" class="fa fa-btc"></i> and other cryptocurrencies</a>.</span></h5>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="card blue about-card z-depth-5">
+    <div class="card-image"><img class="img-circle activator" src="/img/gnu.png" style="height:13vmax;width:13vmax;display:block;margin:auto;"></div>
+    <h4 class="white-text center-align about-text">Hi! I'm <%- theme.author.alias %>.</h4>
+    <div class="center-align">
+      <a class="btn-floating btn-large waves-effect waves-light orange z-depth-3 activator"><i class="material-icons">info_outline</i></a>
+    </div>
+    <div class="card-reveal blue accent-2">
+      <%- page.content %>
+        <span class="card-title white-text"><b>Information</b><i class="material-icons right">close</i></span>
+        <hr>
+        <div class="row about-row">
+          <div class="col l4 m12 s12 center-align about-column">
+            <i class="material-icons white-text large">insert_emoticon</i>
+            <h5 class="white-text"><%- theme.about.title1 %></h5><span class="white-text">I am a developer who creates apps and interfaces for clients (and myself). I like to use frameworks like Bootstrap or Materialize.css (my two favorite) to build these.</span>
+          </div>
+          <div class="col l4 m12 s12 center-align about-column">
+            <i class="material-icons white-text large">work</i>
+            <h5 class="white-text"><%- theme.about.title2 %></h5><span class="white-text">You can find all of my personal projects and contributions to other OS projects on my <a class="yellow-text" href="<%= url_for(theme.author.github) %>" target="_blank">GitHub <i aria-hidden="true" class="fa fa-external-link"></i></a>, though I do maintain a few private projects.</span>
+          </div>
+          <div class="col l4 m12 s12 center-align about-column">
+            <i class="material-icons white-text large">contacts</i>
+            <h5 class="white-text"><%- theme.about.title3 %></h5><span class="white-text">Feel free to contact me via email at <a class="tooltipped yellow-text" data-delay="50" data-position="left" data-tooltip="Click to Reveal Address" href="<%= url_for(theme.contact.email) %>" target="_blank">@unixfy.me</a>.</span>
+          </div><span class="white-text"></span>
+        </div>
+        <div class="row">
+          <span class="white-text"></span>
+          <div class="col s12 m12 l12 center-align">
+            <span class="white-text"></span>
+            <hr>
+            <span class="white-text"><br></span>
+            <h5 class="white-text"><span class="white-text">PS: If you like my work, please <a class="yellow-text" href="<%- url_for(theme.donate.paypal) %>" target="_blank">donate via <i aria-hidden="false" class="fa fa-paypal"></i></a> or <a class="yellow-text" href="<%- url_for(theme.donate.cryptos) %>" target="_blank">via <i aria-hidden="false" class="fa fa-btc"></i> and other cryptocurrencies</a>.</span></h5>
+          </div>
+        </div>
+    </div>
+  </div>
 </div>
