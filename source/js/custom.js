@@ -5,6 +5,8 @@ $(document).ready(function() {
 	$('.tooltipped').tooltip({
 		delay: 50
 	});
+	$('.fixed-action-btn').floatingActionButton();
+
 
 	$('#masonry-grid').masonry({
 		// options
