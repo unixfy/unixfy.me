@@ -1,16 +1,19 @@
-#  _____ _                             ___             __ _                             
-# /__   \ |__   ___ _ __ ___   ___    / __\___  _ __  / _(_) __ _ 
+#  _____ _                             ___             __ _
+# /__   \ |__   ___ _ __ ___   ___    / __\___  _ __  / _(_) __ _
 #   / /\/ '_ \ / _ \ '_ ` _ \ / _ \  / /  / _ \| '_ \| |_| |/ _` |
 #  / /  | | | |  __/ | | | | |  __/ / /__| (_) | | | |  _| | (_| |
 #  \/   |_| |_|\___|_| |_| |_|\___| \____/\___/|_| |_|_| |_|\__, |
-#                                                           |___/                                   
+#                                                           |___/
 # MaterializeCSS Theme for Hexo - Created by Unixfy (https://github.com/unixfy)
 # MIT License
 
-favicon: 
+favicon:
   default: img/favicon.png
 
 poweredby: true
+
+# Google Analytics needs to be MANAULLY configured with your tag code in _partial/analytics.ejs!
+google-analytics: true
 
 author:
   firstname: Alex
@@ -23,7 +26,7 @@ about:
   title1: Who am I?
   title2: Where's my Work?
   title3: Where's my Contact Info?
-  
+
 contact:
   email: https://spamty.eu/mail/v4/557/G39TCD287Gb799ba7c/
 
@@ -35,4 +38,3 @@ menu:
   Home: /
   Blog: /blog
   Portfolio: /portfolio
-  
