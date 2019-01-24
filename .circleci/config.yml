@@ -1,27 +1,22 @@
 version: 2
-jobs: 
-  build: 
-    docker: 
-      - 
-        image: "circleci/node:6.10"
-    steps: 
+jobs:
+  build:
+    docker:
+      - image:     "circleci/node:6.10"
+    steps:
       - checkout
-      - 
-        run: 
+      - run:
           command: "sudo npm install -g hexo-cli"
-          name: "Install HexoCLI"
+          name:    "Install Hexo CLI globally to prepare for build"
       - run:
           command: "sudo rm -rf node_modules/ && sudo npm install"
-          name: "Reinstall Nodemodules"
-      - 
-        run: 
+          name:    "Remove node_modules and reinstall so everything installs correctly"
+      - run:
           command: "hexo clean"
-          name: "Clean up Hexo"
+          name:    "Clean up Hexo"
       - run:
           command: "hexo generate"
-          name: "Generate files Hexo"
+          name:    "Tell Hexo to generate HTML files"
       - run:
           command: "hexo deploy"
-          name: "Deploy to S3!"
-
-
+          name:    "Deploy to S3 with credentials defined in CircleCI settings!"
