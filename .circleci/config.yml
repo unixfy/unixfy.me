@@ -9,7 +9,7 @@ jobs:
           command: "sudo npm install -g hexo-cli"
           name:    "Install Hexo CLI globally to prepare for build"
       - run:
-          command: "sudo rm -rf node_modules/ && sudo npm install"
+          command: "sudo rm -rf node_modules/ && sudo npm install --unsafe-perm=true --allow-root"
           name:    "Remove node_modules and reinstall so everything installs correctly"
       - run:
           command: "hexo clean"
