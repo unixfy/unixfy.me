@@ -2,5 +2,6 @@
   <h2><b><%= page.title || '(no title)' %></b></h2>
   <hr>
   <%- page.content %>
+  <%- partial('_partial/disqus.ejs') %>
 </div>
 <%- partial('_partial/blognav.ejs') %>

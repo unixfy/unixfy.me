@@ -15,6 +15,9 @@ poweredby: true
 # Google Analytics needs to be MANAULLY configured with your tag code in _partial/analytics.ejs!
 googleanalytics: true
 
+# Enable commenting via Disqus? Disqus needs to be MANUALLY configured by pasting the install code in _partial/disqus.ejs
+disqus: true
+
 author:
   firstname: Alex
   lastname: Wang
