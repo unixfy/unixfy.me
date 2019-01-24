@@ -1,6 +1,8 @@
 <div class="row">
-  <div class="col s12 m12 l12">
-    <h3 class="center-align">Blog</h3>
+    <%- partial('_partial/jumbotron.ejs') %>
+    <div class="col s12 m12 l12">
+
+    <!-- Post listing -->
     <div class="row" id="masonry-grid">
       <%site.posts.sort('date', -1).each(function(post){ %>
         <div class="col s6 m4">
