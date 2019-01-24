@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image:     "circleci/node:6.10"
+      - image:     "circleci/python:latest-node"
     steps:
       - checkout
       - run:
@@ -20,3 +20,9 @@ jobs:
       - run:
           command: "hexo deploy"
           name:    "Deploy to S3 with credentials defined in CircleCI settings!"
+      - run:
+          command: "sudo pip install awscli"
+          name:    "Install the AWS CLI through python-pip"
+#      - run:
+#          command: aws cloudfront create-invalidation --distribution-id E2FQWG2PEOZ63B  --paths "/*"
+#          name:    "Create AWS CloudFront invalidation so changes take effect immediately"
