@@ -13,7 +13,7 @@ favicon:
 poweredby: true
 
 # Google Analytics needs to be MANAULLY configured with your tag code in _partial/analytics.ejs!
-google-analytics: true
+googleanalytics: true
 
 author:
   firstname: Alex
