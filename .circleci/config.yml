@@ -23,6 +23,6 @@ jobs:
       - run:
           command: "sudo pip install awscli"
           name:    "Install the AWS CLI through python-pip"
-#      - run:
-#          command: aws cloudfront create-invalidation --distribution-id E2FQWG2PEOZ63B  --paths "/*"
-#          name:    "Create AWS CloudFront invalidation so changes take effect immediately"
+      - run:
+          command: aws cloudfront create-invalidation --distribution-id ESFJZLIOTD4Z  --paths "/*"
+          name:    "Create AWS CloudFront invalidation so changes take effect immediately"
