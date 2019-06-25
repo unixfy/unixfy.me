@@ -76,10 +76,10 @@ theme: materializecss
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: aws-s3
-  region: us-east-1
-  bucket: unixfy.me
+#deploy:
+#  type: aws-s3
+#  region: us-east-1
+#  bucket: unixfy.me
 
 # hexo-admin authentification. DO NOT edit these by hand!
 admin:
